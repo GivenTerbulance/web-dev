@@ -1,78 +1,570 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-image: url('https://rubissoftwaresolutions.com/wp-content/uploads/2023/11/Unlocking-the-Potential-The-Power-of-Custom-Software-Development.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color:white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: transparent;
+  box-shadow: 0 2px 5px aqua;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(0, 204, 255);
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  padding: 0 80px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.text-content {
+  flex: 1;
+  color: white;
+}
+
+.typing-container {
+  display: inline-flex;
+  align-items: center;
+  font-size: 40px;
+  font-family: monospace;
+  margin-bottom: 20px;
+}
+
+.typed-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 4s steps(30) forwards;
+}
+
+.cursor {
+  width: 2px;
+  height: 32px;
+  background-color: white;
+  animation: blink 0.7s infinite;
+  margin-left: 2px;
+}
+
+.text-content p {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.text-content button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: lavender;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.text-content button:hover {
+  background-color: #00b3b3;
+  color: white;
+}
+
+.image-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+  animation: glow 3s infinite alternate;
+}
+
+/* Animations */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 20.5ch; } /* Adjust based on your text length */
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 10px rgba(0, 174, 255, 0.6); }
+  50% { box-shadow: 0 0 25px rgba(0, 174, 255, 1); }
+  100% { box-shadow: 0 0 10px rgba(0, 174, 255, 0.6); }
+}
+
+/* Biography Section */
+.biography-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 200px 20px;
   
-  body {
-    background-image: url('https://rubissoftwaresolutions.com/wp-content/uploads/2023/11/Unlocking-the-Potential-The-Power-of-Custom-Software-Development.jpg'); /* Replace with your actual image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Optional: add a background overlay if text becomes hard to read */
-  
-  
-  header {
+}
+
+.bio-container {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.bio-container h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #0056b3;
+  text-align:top;
+  position:relative;
+}
+
+.bio-container p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#our-company {
+  text-align:left;
+  padding: 50px;
+  background-color: transparent;
+}
+
+#our-company h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color:#0056b3;
+}
+
+#our-company p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.link-to-About {
+  font-size: 18px;
+  text-decoration: none;
+  color: #00aaff; /* Link color */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.link-to-about:hover {
+  color: #005f77; /* Darker link color on hover */
+}
+
+#follow-me {
+  text-align: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+#follow-me h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color:#00aaff ;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 30px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #00aaff; /* Change color on hover */
+}
+
+#upload-resume {
+  text-align: center;
+  padding: 50px;
+  background-color: #eaeaea;
+}
+
+#upload-resume h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color:#00aaff;
+}
+
+#upload-resume form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#upload-resume input[type="file"] {
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.upload-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+  background-color: #005f77;
+}
+
+
+.services-section {
+    background-color: transparent;
+    padding: 60px 80px;
+    text-align: left;
+}
+
+.services-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #00aaff;
+}
+
+.service-boxes {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .main-content {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 90vh;
-    padding-left: 80px;
-  }
-  
-  .intro {
-    max-width: 500px;
-  }
-  
-  .intro h1 {
-    font-size: 48px;
+    gap: 30px;
+    flex-wrap: wrap; /* Makes the boxes stack on smaller screens */
+}
+
+.service-box {
+    background-color:#005f77;
+    padding: 20px;
+    width: 30%; /* Adjust width for more or fewer boxes in a row */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: glow 3s infinite alternate;
+}
+
+.service-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
     margin-bottom: 20px;
-  }
+    border-radius: 50%;
+}
+
+.service-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.service-box button {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.service-box button:hover {
+    background-color: #004494;
+    transform: scale(1.05);
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Experties-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 200px 20px;
   
-  .intro p {
-    font-size: 18px;
+}
+
+.expert-container {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.expert-container h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #0056b3;
+  text-align:top;
+  position:relative;
+}
+
+.expert-container p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.expertise-section {
+  background-color:#005f77;
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.expertise-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #00aaff;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap; /* Makes the boxes stack on smaller screens */
+}
+
+.skill {
+  background-color: rgb(60, 0, 128);
+  padding: 20px;
+  width: 22%; /* Adjust width for more or fewer boxes in a row */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.skill h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #00aaff ;
+}
+
+.skill p {
+  font-size: 16px;
+  color:darkcyan;
+  margin-bottom: 20px;
+}
+
+.skill:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-item {
+  margin: 0 20px;
+}
+
+.footer-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-item p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.projects-section {
+  padding: 50px 20px;
+  text-align: left;
+  background-color: transparent;
+}
+
+.projects-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #00aaff ;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-box {
+  width: 300px;
+  background-color: transparent;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-box h3 {
+  font-size: 22px;
+  margin: 15px 0;
+  color: #00aaff ;
+}
+
+.project-box p {
+  font-size: 16px;
+  color: white;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.project-box .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.project-box:hover {
+  transform: translateY(-10px);
+}
+
+.project-box:hover .btn {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-box {
+    width: 80%;
     margin-bottom: 30px;
   }
-  
-  .intro button {
-    padding: 12px 24px;
-    font-size: 16px;
-    background-color:lavender;
-    color:black;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-left h3,
+.footer-right h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.footer-left p,
+.footer-right p {
+  color: #bbb;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: #222;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .intro button:hover {
-    background-color: #0056b3;
+
+  .footer-left, .footer-right {
+    flex: 0 0 100%;
+    text-align: center;
   }
-  
+}

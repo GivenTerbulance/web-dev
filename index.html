@@ -1,54 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      background-image: url('https://rubissoftwaresolutions.com/wp-content/uploads/2023/11/Unlocking-the-Potential-The-Power-of-Custom-Software-Development.jpg'); /* 🔁 Replace with your actual image path */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      color: #333;
-      font-family: 'Arial', sans-serif;
-    }
-
-    .main-content {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      height: 90vh;
-      padding-left: 80px;
-      background-color: rgba(255, 255, 255, 0.7); /* Optional overlay for better text visibility */
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IT World</title>
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
-  <header>
-    <div class="logo"><strong>MySite</strong></div>
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Service</a>
-      <a href="#">Blogs</a>
-      <a href="#">Pages</a>
-      <a href="#">Contact</a>
-     
+<header>
+  <div class="logo">IT World</div>
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 
-    </nav>
-  </header>
-
-  <div class="main-content">
-    <div class="intro">
-      <h1>Welcome to the IT world!!</h1>
+<div class="main-content">
+  <div class="content-wrapper">
+    <div class="text-content">
+      <div class="typing-container">
+        <span class="typed-text">Welcome to the IT world!!</span>
+        <span class="cursor"></span>
+      </div>
       <p>We are passionate developers with experience in various fields like web design, front-end development, and building intuitive user interfaces.</p>
-      <button onclick="window.location.href='#portfolio'">My Portfolio</button>
+      <button onclick="window.location.href='#portfolio'">Our Portfolio</button>
+    </div>
+
+    <div class="image-content">
+      <img src="c:\Users\teboh\PLP\web_development\web-dev\Adjust the cartoon-style image of a room labeled _306_ to make the people appear more 3D..png" alt="Side Image"> 
     </div>
   </div>
+</div>
+<section class="biography-section" id="biography">
+  <div class="bio-container">
+    <h2>Biography</h2>
+    <p>
+      Hello! We are passionate developers dedicated to creating user-friendly and impactful digital experiences.
+      With a background in software development, web design, and cloud technologies, We are committed to continuous learning and innovation.
+      Outside of coding, We do enjoy exploring new tech trends, collaborating with creative minds, and mentoring future developers.
+    </p><br>
+   
+    <section id="page1">
+     
+    </section>
+    
+    <hr class="divider"> 
+    
+    <section id="our-company">
+      <h2>
+        <pre>
+   Group_306
+        </pre>
+      </h2>
+      <p>We are a team of passionate developers committed to delivering high-quality solutions.</p>
+      <a href="#About" class="link-to-about">Learn More About Us</a>
+    </section>
+    <section id="follow-me">
+      <h2>Follow us</h2>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+      </div>
+    </section><br>
+    
+    <hr class="divider"><br>
+    
+    <section id="upload-resume">
+      <h2>Upload Resume</h2>
+      <form>
+        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" />
+        <button type="submit" class="upload-button">Upload</button>
+      </form>
+    </section>
+    
+  </div>
+</section>
+<div class="services-section">
+  <h2>Our Services</h2>
+  <div class="service-boxes">
+      <div class="service-box">
+          <img src="https://kartikmehtablog.com/wp-content/uploads/2022/12/AdobeStock_419269782-scaled.jpeg" alt="Service 1" />
+          <h3>Web Development</h3>
+          <p>Creating dynamic websites and web applications to fit your needs.</p>
+          <button onclick="window.location.href='#web-development'">Learn More</button>
+      </div>
+      <div class="service-box">
+          <img src="https://riseuplabs.com/wp-content/uploads/2021/07/mobile-application-development-guidelines-riseuplabs.jpg" alt="Service 2" />
+          <h3>Mobile Apps</h3>
+          <p>Building mobile apps that deliver excellent user experience.</p>
+          <button onclick="window.location.href='#mobile-apps'">Learn More</button>
+      </div>
+      <div class="service-box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaQM0BVWXeBCgEgbD-L5D3NKHpe9IDJrOPsA&s" alt="Service 3" />
+          <h3>Graphic Design</h3>
+          <p>Creating visually stunning designs for your branding needs.</p>
+          <button onclick="window.location.href='#graphic-design'">Learn More</button>
+      </div>
+  </div>
+</div>
+<section class="Experties-section" id="Experties">
+  <div class="expertise-section">
+    <h2>Our Expertise</h2>
+    <div class="skills">
+        <div class="skill">
+            <img src="https://2.bp.blogspot.com/-U5UbLbjuQvM/Wp-Pb-34TnI/AAAAAAAAAJg/bwLpWnM_L0E90DkN8OpzIm5ol8axYtcugCLcBGAs/s1600/7%2B1webdevelopment_1600x1200_021014.jpg" alt="Skill 1" class="skill-icon" />
+            <div class="skill-info">
+                <h3>Web Development</h3>
+                <p>We specialize in creating custom websites, providing responsive and interactive user experiences.</p>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/523/046/original/vector-mobile-app-development-concept.jpg" alt="Skill 2" class="skill-icon" />
+            <div class="skill-info">
+                <h3>Mobile App Development</h3>
+                <p>Our mobile solutions ensure high performance and a seamless user experience on all platforms.</p>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.H7Bb9Ig_6fgMOO2oNYWPOAHaE8?rs=1&pid=ImgDetMain" alt="Skill 3" class="skill-icon" />
+            <div class="skill-info">
+                <h3>UI/UX Design</h3>
+                <p>Our design team creates visually appealing and user-friendly designs tailored to your needs.</p>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.HjTaU2AJkvV-Ub779QWVoAHaE8?rs=1&pid=ImgDetMain" alt="Skill 4" class="skill-icon" />
+            <div class="skill-info">
+                <h3>Cloud Computing</h3>
+                <p>We help businesses migrate to the cloud with secure, scalable, and efficient solutions.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+  <div class="footer-content">
+      <div class="footer-item">
+          <h3>Projects</h3>
+          <p>150+</p>
+      </div>
+      <div class="footer-item">
+          <h3>Working Hours</h3>
+          <p>10,000+</p>
+      </div>
+      <div class="footer-item">
+          <h3>Happy Clients</h3>
+          <p>500+</p>
+      </div>
+  </div>
+</footer>
+ </section><br>
+    <section class="projects-section">
+      <h2>Our Projects</h2>
+      <div class="projects-container">
+        <div class="project-box">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.F7QDd3VcKRx-uDiuIBAVbAHaFR?rs=1&pid=ImgDetMain" alt="Project 1">
+          <h3>Weather App</h3>
+          <p>This project of weather application simply display monitored weather from time to time </p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-box">
+          <img src="https://cdn-images-1.medium.com/max/1600/1*Aq7TXpuzXp8lTX0Dhxw_DQ.png" alt="Project 2">
+          <h3>Portfolio</h3>
+          <p>A portfolio is a compilation of academic and professional materials.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-box">
+          <img src="https://tse1.explicit.bing.net/th/id/OIP.SUXq-EdN_VufT2AgNWdBVgHaE8?rs=1&pid=ImgDetMain" alt="Project 3">
+          <h3>Hospital Appointment Booking system </h3>
+          <p> Use the e-Hospital application for patient registration and to book, confirm, or cancel appointments. </p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Contact Us</h3>
+          <p>Email: <a href="mailto:info@example.com">team_306@itcompany.co.za</a></p>
+          <p>Phone: +123 456 7890</p>
+          <p>Address: 417 Company St, City, Country</p>
+        </div>
+    
+        <div class="footer-right">
+          <h3>Follow Us</h3>
+          <p>Stay connected with us on social media for updates.</p>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p>&copy; 2025 306_ITCOMPANY. All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+    
+
 
 </body>
 </html>
