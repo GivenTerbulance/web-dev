@@ -3,6 +3,9 @@
 Welcome to the IT World website project!
 This is a responsive and modern multi-section website built by the development team Group_306.
 
+<u>Team Members</u>
+<li>Given Terbulance</li>
+<li>Mohammed Oyediran</li>
 
 🚀 Features
 
