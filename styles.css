@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +22,7 @@ header {
   padding: 20px 40px;
   background-color: transparent;
   box-shadow: 0 2px 5px aqua;
+  background-color: rgba(13, 26, 32, 0.6);
 }
 
 .nav-links {
@@ -34,12 +36,18 @@ header {
   font-weight: bold;
 }
 
+.nav-links a:hover {
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+
 .main-content {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 90vh;
   padding: 0 80px;
+  background-color: #010e1cc3;
 }
 
 .content-wrapper {
@@ -260,7 +268,7 @@ header {
 
 
 .services-section {
-    background-color: transparent;
+    background-color: rgba(0, 28, 40, 0.824);
     padding: 60px 80px;
     text-align: left;
 }
@@ -268,7 +276,8 @@ header {
 .services-section h2 {
     font-size: 36px;
     margin-bottom: 30px;
-    color: #00aaff;
+    color: #61c7fa;
+    text-align: center;
 }
 
 .service-boxes {
@@ -279,7 +288,7 @@ header {
 }
 
 .service-box {
-    background-color:#005f77;
+    background-color:#ffffff;
     padding: 20px;
     width: 30%; /* Adjust width for more or fewer boxes in a row */
     border-radius: 10px;
@@ -344,7 +353,7 @@ header {
 .expert-container h2 {
   font-size: 36px;
   margin-bottom: 30px;
-  color: #0056b3;
+  color: #d7e7f8;
   text-align:top;
   position:relative;
 }
@@ -355,7 +364,7 @@ header {
 }
 
 .expertise-section {
-  background-color:#005f77;
+  background-color:#024a5c;
   padding: 60px 80px;
   text-align: center;
 }
@@ -363,7 +372,7 @@ header {
 .expertise-section h2 {
   font-size: 36px;
   margin-bottom: 30px;
-  color: #00aaff;
+  color: #d9eaf2;
 }
 
 .skills {
@@ -374,7 +383,7 @@ header {
 }
 
 .skill {
-  background-color: rgb(60, 0, 128);
+  background-color: rgb(255, 255, 255);
   padding: 20px;
   width: 22%; /* Adjust width for more or fewer boxes in a row */
   border-radius: 10px;
@@ -437,13 +446,15 @@ header {
 .projects-section {
   padding: 50px 20px;
   text-align: left;
-  background-color: transparent;
+  background-color: rgba(0, 28, 40, 0.824);
+  margin-top: -20px;
 }
 
 .projects-section h2 {
   font-size: 36px;
   margin-bottom: 40px;
-  color: #00aaff ;
+  color: #afdaf0 ;
+  text-align: center;
 }
 
 .projects-container {
@@ -454,24 +465,30 @@ header {
 }
 
 .project-box {
+  position: relative;
   width: 300px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.292);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
+  height: 450px;
+  padding: 0 5px;
 }
 
 .project-box img {
-  width: 100%;
-  height: 200px;
+  width: 115%;
+  height: 220px;
   object-fit: cover;
+  overflow: hidden;
+  margin: -20px;
 }
 
 .project-box h3 {
   font-size: 22px;
-  margin: 15px 0;
+  margin: 25px auto;
   color: #00aaff ;
+  text-align: center;
 }
 
 .project-box p {
@@ -490,6 +507,17 @@ header {
   text-decoration: none;
   border-radius: 5px;
   margin-bottom: 20px;
+  position: absolute;
+  bottom: 2px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn{
+  display: inline-flex !important;
+  align-self: flex-start !important;
+  bottom: 1px !important;
 }
 
 .project-box:hover {
